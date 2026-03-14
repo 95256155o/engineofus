@@ -11,17 +11,19 @@
     .snow{position:fixed;top:-10px;width:2px;height:2px;background:#fff;border-radius:50%;animation:fall linear infinite}
     @keyframes fall{to{transform:translateY(105vh) translateX(-20px)}}
 
-    .text{text-align:center;z-index:2;margin-bottom:6vh}
+    .text{text-align:center;z-index:2;margin-bottom:4vh}
     h1{font-size:clamp(1.8rem,5vw,3rem);letter-spacing:.08em;font-weight:400}
-    p{color:#3a3a3a;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;margin-top:1.4rem}
+    .soon{color:#3a3a3a;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;margin-top:1.4rem}
 
     .car{width:clamp(300px,60vw,800px);animation:breathe 3s ease-in-out infinite}
     .car img{width:100%;display:block}
 
     @keyframes breathe{
-      0%,100%{filter:brightness(1) drop-shadow(0 0 20px rgba(255,20,20,.15))}
-      50%{filter:brightness(1.15) drop-shadow(0 0 40px rgba(255,20,20,.3))}
+      0%,100%{filter:brightness(1)}
+      50%{filter:brightness(1.2)}
     }
+
+    footer{position:fixed;bottom:2rem;color:#1a1a1a;font-size:.7rem;letter-spacing:.15em;z-index:2}
 
     .lang{position:fixed;top:2rem;right:2rem;z-index:10}
     .lang a{color:#222;text-decoration:none;font-size:.8rem;transition:color .3s}
@@ -32,12 +34,14 @@
 
   <div class="text">
     <h1>The Engine of Us</h1>
-    <p>Coming Soon</p>
+    <p class="soon">Coming Soon</p>
   </div>
 
   <div class="car">
     <img src="taillight.png" alt="">
   </div>
+
+  <footer>Jesse Luo · 2026</footer>
 
   <div class="lang"><a href="https://hongmingzhixin.com">中文</a></div>
 
